@@ -9,7 +9,16 @@
     <h1>Menu</h1>
     <p><a href = "1.html">Первый пример (Sort)</a></p>
     <script>
-        
+        let arrOne = Array.from(Array(10),() => {return Math.random()* 20 + 20});
+        console.log(arrOne.toString());
+
+        console.log(arrOne.sort().toString());
+
+        arrOne.sort((a,b)=>b-a);
+        console.log(arrOne.toString());
+
+        let colors = ["12", "45", "34", "2222", "111111111"]; // min=11111111 max=45
+        alert(colors.sort());
     </script>
 </body>
 </html>
